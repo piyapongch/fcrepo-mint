@@ -33,12 +33,12 @@ public class NoidPathMinter extends HttpPidMinter {
 
     /**
      * The NoidPathMinter class constructor.
-     * @param url
-     * @param method
-     * @param username
-     * @param password
-     * @param regex
-     * @param xpath
+     * @param url noid server url
+     * @param method http method
+     * @param username username
+     * @param password password
+     * @param regex regular expression for parsing response
+     * @param xpath xpaht for parsing response
      */
     public NoidPathMinter(final String url, final String method, final String username, final String password,
         final String regex, final String xpath) {
@@ -47,9 +47,8 @@ public class NoidPathMinter extends HttpPidMinter {
 
     /**
      * The NoidPathMinter class constructor.
-     * @param url
-     * @param method
-     * @throws IOException
+     * @param url noid server url
+     * @param method http method
      */
     public NoidPathMinter(final String url, final String method) {
         super(url, method, null, null, null, null);
@@ -57,7 +56,7 @@ public class NoidPathMinter extends HttpPidMinter {
 
     /**
      * The init method.
-     * @throws IOException
+     * @throws IOException if exception occurs
      */
     @PostConstruct
     public void init() throws IOException {
@@ -66,7 +65,7 @@ public class NoidPathMinter extends HttpPidMinter {
 
     /**
      * The destroy method.
-     * @throws IOException
+     * @throws IOException if exception occurs
      */
     @PreDestroy
     public void destroy() throws IOException {
