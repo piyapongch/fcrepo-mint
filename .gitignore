@@ -8,3 +8,6 @@ fcrepo4-data/
 *~
 .idea/
 *.iml
+/.settings/
+/.classpath
+/.project
